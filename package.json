@@ -5,7 +5,7 @@
   "author": "Collin Monahan <llaenowyd@gmail.com>",
   "license": "ISC",
   "scripts": {
-    "dev": "next -p 3001",
+    "dev": "cross-env NODE_OPTIONS='--openssl-legacy-provider' next -p 3030",
     "build": "next build",
     "start": "next start"
   },
@@ -13,6 +13,7 @@
     "@material-ui/core": "^4.11.4",
     "@material-ui/icons": "^4.11.2",
     "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
     "mobx": "^6.3.2",
     "mobx-react": "^7.2.0",
     "mobx-react-lite": "^3.2.0",
